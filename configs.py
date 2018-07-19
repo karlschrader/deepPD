@@ -15,7 +15,7 @@ DualConfig = namedtuple(
 )
 
 # For most problems, it is sufficient to clone a base config and only modify selected values.
-problemConfigBase = ProblemConfig(dim=50, total_time=0.3, num_time_interval=10)
+problemConfigBase = ProblemConfig(dim=10, total_time=0.3, num_time_interval=20)
 deepConfigBase = DeepConfig(
     n_layer=4,
     num_hiddens=[0, 10, 10, 0],
