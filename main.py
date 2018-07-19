@@ -258,6 +258,10 @@ def square_restore():
 def main():
     logging.basicConfig(
         level=logging.INFO, format='%(levelname)-6s %(message)s')
+    if (not os.path.exists('./saves')):
+        os.mkdir('./saves')
+    if (not os.path.exists(FLAGS.tensorboard_dir)):
+        os.mkdir(FLAGS.tensorboard_dir)
     square_learn()
 
 
